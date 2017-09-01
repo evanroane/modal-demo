@@ -1,5 +1,5 @@
-.git
-.idea
-/node_modules
+.git/
+.idea/
+/node_modules/
 /dist/bundle.js
 /dist/bundle.js.map
