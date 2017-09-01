@@ -1,0 +1,199 @@
+body {
+    background-color: floralwhite;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.content-area {
+    display: flex;
+    width: 100%;
+    height: 110vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-header {
+    text-align: center;
+    color: darkgreen;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.page-footer {
+    text-align: center;
+    color: darkgreen;
+}
+
+.button-container {
+    height: 260px;
+    width: 560px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    min-width: 50px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    background-color: gray;
+    color: lightgrey;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: lightgrey;
+    color: gray;
+}
+
+.button-primary {
+    background-color: darkgreen;
+    color: lightgrey;
+}
+
+.button-primary:active {
+    background-color: green;
+}
+
+
+.modal-enter {
+    opacity: 0.01;
+}
+
+.modal-enter.modal-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.modal-leave {
+    opacity: 1;
+}
+
+.modal-leave.modal-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.modal-trigger-button {
+    border: 1px solid green;
+    border-radius: 3px;
+    height: 50px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    margin: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.modal-trigger-button:active {
+    background-color: lightgreen;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.modal-wrap {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-dialog {
+    width: 500px;
+}
+
+.modal-lightbox {
+    width: 90vw;
+    max-height: 90vh;
+}
+
+.modal-lightbox-image-wrapper {
+    display: flex;
+    justify-content: center;
+    max-height: 70vh;
+}
+
+.modal-content {
+    border: 1px solid lightgrey;
+    background-color: antiquewhite;
+    padding: 25px;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.modal-message {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-x {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.modal-x-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    top: 30px;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+.modal-controls {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.spinner {
+    font-size: 100px;
+    margin: 25px;
+    width: 100px;
+    height: 100px;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
