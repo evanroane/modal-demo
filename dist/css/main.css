@@ -180,6 +180,7 @@ body {
 }
 
 .spinner {
+    line-height: 1;
     font-size: 100px;
     margin: 25px;
     width: 100px;
