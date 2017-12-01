@@ -1,8 +1,8 @@
-import isEmpty from 'lodash/isEmpty';
 import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from './modal';
 import Spinner from '../common/spinner';
+import ImageWrapper from '../common/image-wrapper';
 
 
 const Lightbox = props => (
@@ -15,8 +15,9 @@ const Lightbox = props => (
                 : null
         }
         <div className="modal-lightbox-image-wrapper">
-            <Spinner loading={isEmpty(props.content.url)}/>
-            <img src={props.content.url} />
+            <ImageWrapper imageUrl={props.content.url}>
+                <Spinner loading={true}/>
+            </ImageWrapper>
         </div>
     </Modal>
 );

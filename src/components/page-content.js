@@ -34,6 +34,7 @@ class PageContent extends React.Component {
                 'CSS animations/transitions for opening effects ✅',
                 'Used eslint to analyze code style ✅',
                 'Unit tested business logic ✅',
+                'Image loading state is visible until loading is complete ✅',
             ],
             primaryAction: this.props.actions.closeModal,
             primaryActionText: 'Close',
